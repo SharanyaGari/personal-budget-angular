@@ -8,7 +8,10 @@ app.get('/hello', (req, res) => {
     res.send('Hi World');
 });
 
-const budget = {
+const budget = require('./pBudget.json')
+console.log(budget)
+
+const budgets = {
     myBudget: [
         {
             title: 'Eat out',
