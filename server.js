@@ -9,24 +9,9 @@ app.get('/hello', (req, res) => {
 });
 
 const budget = require('./pBudget.json')
-console.log(budget)
+//console.log(budget)
 
-const budgets = {
-    myBudget: [
-        {
-            title: 'Eat out',
-            budget: 25
-        },
-        {
-            title: 'Rent',
-            budget: 275
-        },
-        {
-            title: 'Grocery',
-            budget: 110
-        },
-    ]
-};
+
 
 
 app.get('/budget', (req, res) => {
